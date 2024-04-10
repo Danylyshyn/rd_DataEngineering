@@ -14,6 +14,10 @@ if not AUTH_TOKEN:
 API_URL = os.getenv("API_URL", "https://fake-api-vycpfa6oca-uc.a.run.app/sales")
 
 
+def save_json(filename, page, data) -> None:
+    local_disk.save_to_disk(data, filename, page)
+
+
 def save_sales_to_local_disk(date: str, raw_dir: str) -> int:
 
     logging.info(f"check path: {raw_dir}")
@@ -31,7 +35,7 @@ def save_sales_to_local_disk(date: str, raw_dir: str) -> int:
             headers={'Authorization': AUTH_TOKEN},
         )
         if response.status_code == 200:
-            thread_file = threading.Thread(target=local_disk.save_to_disk(response.json(), raw_path, page))
+            thread_file = threading.Thread(target=save_json(raw_path, page, response.json()))
             thread_file.start()
         else:
             break
