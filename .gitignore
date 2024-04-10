@@ -126,3 +126,6 @@ dmypy.json
 .pyre/
 !/lesson_02/.env
 !/lesson_02/raw/
+!/lesson_02/stg/
+*.json
+*.avro
