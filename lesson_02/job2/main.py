@@ -2,9 +2,14 @@
 This file contains the controller that accepts command via HTTP
 and trigger business logic layer
 """
+import os
 from flask import Flask, request
 from flask import typing as flask_typing
 from lesson_02.job2.local_disk import convert_json_to_avro
+
+
+SERVER_HOST = os.getenv("SERVER_HOST", "localhost")
+SERVER_PORT = os.getenv("SERVER_PORT", 8082)
 
 
 app = Flask(__name__)
@@ -36,7 +41,7 @@ def main() -> flask_typing.ResponseReturnValue:
 
 
 def start_server():
-    app.run(debug=True, host="localhost", port=8082)
+    app.run(debug=True, host="localhost", port=SERVER_PORT)
 
 
 if __name__ == "__main__":

@@ -124,8 +124,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-!/lesson_02/.env
-!/lesson_02/raw/
-!/lesson_02/stg/
+../lesson_02/raw/
+../lesson_02/stg/
 *.json
 *.avro

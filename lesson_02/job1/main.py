@@ -14,6 +14,9 @@ if not AUTH_TOKEN:
     print("AUTH_TOKEN environment variable must be set")
     exit(1)
 
+SERVER_HOST = os.getenv("SERVER_HOST", "localhost")
+SERVER_PORT = os.getenv("SERVER_PORT", 8081)
+
 
 app = Flask(__name__)
 
@@ -50,7 +53,7 @@ def main() -> flask_typing.ResponseReturnValue:
 
 
 def start_server():
-    app.run(debug=True, host="localhost", port=8081)
+    app.run(debug=True, host="localhost", port=SERVER_PORT)
 
 
 if __name__ == "__main__":
