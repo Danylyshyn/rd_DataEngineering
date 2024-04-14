@@ -2,6 +2,7 @@ import os
 import logging
 import requests
 import threading
+import shutil
 from lesson_02.job1 import local_disk
 
 
@@ -20,25 +21,24 @@ def save_json(filename, page, data) -> None:
 
 def save_sales_to_local_disk(date: str, raw_dir: str) -> int:
 
+    logging.info(f"clean folder: {raw_dir}")
+    shutil.rmtree(raw_dir, ignore_errors=True)
+
     logging.info(f"check path: {raw_dir}")
     raw_path = local_disk.check_path(raw_dir)
 
-    logging.info(f"clean folder: {raw_dir}")
-    local_disk.clean_folder(raw_path)
-
     page = 0
-    while True:
+    checkrequest = True
+    while checkrequest:
         page += 1
         response = requests.get(
             url=API_URL,
             params={'date': date, 'page': page},
             headers={'Authorization': AUTH_TOKEN},
         )
-        if response.status_code == 200:
+        checkrequest = (response.status_code == 200)
+        if checkrequest:
             thread_file = threading.Thread(target=save_json(raw_path, page, response.json()))
             thread_file.start()
-        else:
-            break
-
     logging.info("\tI'm in get_sales(...) function!")
     return 200
