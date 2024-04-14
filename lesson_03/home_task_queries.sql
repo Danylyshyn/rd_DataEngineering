@@ -37,7 +37,18 @@ ORDER BY rents_cnt DESC
 LIMIT 10;
 
 
-
+SELECT count(rental_id) AS rents_cnt,
+       actor.actor_id,
+       actor.first_name,
+       actor.last_name
+FROM rental
+         FULL JOIN inventory ON inventory.inventory_id = rental.inventory_id
+         FULL JOIN film ON film.film_id = inventory.film_id
+         FULL JOIN film_actor ON film_actor.film_id = film.film_id
+         FULL JOIN actor ON actor.actor_id = film_actor.actor_id
+GROUP BY actor.actor_id
+ORDER BY rents_cnt DESC
+--LIMIT 10;
 /*
 3.
 Вивести категорія фільмів, на яку було витрачено найбільше грошей
