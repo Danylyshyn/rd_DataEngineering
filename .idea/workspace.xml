@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52507829-f9db-4d6c-897a-5e402ef55a97" name="Changes" comment="Start jobu">
-      <change afterPath="$PROJECT_DIR$/lesson_02/job2/parent.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/job1/local_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_02/job1/local_disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/job1/sales_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_02/job1/sales_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/job1/test_job1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_02/job1/test_job1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/job2/local_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_02/job2/local_disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/stg/sales/2022-08-09/sales_2022-08-09_1.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/stg/sales/2022-08-09/sales_2022-08-09_2.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/stg/sales/2022-08-09/sales_2022-08-09_3.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_02/stg/sales/2022-08-09/sales_2022-08-09_4.avro" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +96,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "lesson__02",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/LABA/RD/src/rd_DataEngineering/lesson_02/job2",
+    "last_opened_file_path": "D:/Projects/Apache/AirFlow",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -380,7 +370,7 @@
     <SUITE FILE_PATH="coverage/rd_DataEngineering$sales_api.coverage" NAME="sales_api Coverage Results" MODIFIED="1712601838156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_02/job1" />
     <SUITE FILE_PATH="coverage/rd_DataEngineering$main.coverage" NAME="main_job1 Coverage Results" MODIFIED="1712428770283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\LABA\RD\src\rd_DataEngineering\lesson_02\job1" />
     <SUITE FILE_PATH="coverage/rd_DataEngineering$api_with_requests.coverage" NAME="api_with_requests Coverage Results" MODIFIED="1712408719795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_02" />
-    <SUITE FILE_PATH="coverage/rd_DataEngineering$main_job1.coverage" NAME="main_job1 Coverage Results" MODIFIED="1713126230362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\LABA\RD\src\rd_DataEngineering\lesson_02\job1" />
+    <SUITE FILE_PATH="coverage/rd_DataEngineering$main_job1.coverage" NAME="main_job1 Coverage Results" MODIFIED="1713130668628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\LABA\RD\src\rd_DataEngineering\lesson_02\job1" />
     <SUITE FILE_PATH="coverage/rd_DataEngineering$.coverage" NAME=" Coverage Results" MODIFIED="1712781021948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_02/job2" />
     <SUITE FILE_PATH="coverage/rd_DataEngineering$local_disk.coverage" NAME="local_disk Coverage Results" MODIFIED="1712602321278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_02/job2" />
     <SUITE FILE_PATH="coverage/rd_DataEngineering$webServer1.coverage" NAME="mainjob2 Coverage Results" MODIFIED="1712427250836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_02" />
