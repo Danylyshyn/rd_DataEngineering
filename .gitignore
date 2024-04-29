@@ -129,3 +129,12 @@ dmypy.json
 ../lesson_02/stg/
 *.json
 *.avro
+!/lesson_07/docker-compose.yaml
+!/lesson_07/Dockerfile
+!/lesson_07/.env
+
+lesson_07/Dockerfile
+
+lesson_07/docker-compose.yaml
+
+lesson_07/logs/
