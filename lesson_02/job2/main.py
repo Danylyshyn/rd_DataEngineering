@@ -9,7 +9,7 @@ from flask import typing as flask_typing
 from lesson_02.job2.local_disk import convert_json_to_avro
 
 SERVER_HOST = os.getenv("SERVER_HOST", "localhost")
-SERVER_PORT = os.getenv("SERVER_PORT", 8082)
+SERVER_PORT = os.getenv("SERVER_PORT", 8087)
 
 app = Flask(__name__)
 

@@ -10,7 +10,7 @@ from lesson_02.job1.sales_api import save_sales_to_local_disk
 
 
 SERVER_HOST = os.getenv("SERVER_HOST", "localhost")
-SERVER_PORT = os.getenv("SERVER_PORT", 8081)
+SERVER_PORT = os.getenv("SERVER_PORT", 8086)
 
 
 app = Flask(__name__)
