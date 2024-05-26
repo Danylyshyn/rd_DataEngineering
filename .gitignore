@@ -138,3 +138,6 @@ lesson_07/Dockerfile
 lesson_07/docker-compose.yaml
 
 lesson_07/logs/
+/lesson_10/logs/
+/lesson_10/data/
+/lesson_10/data/sales_clean.csv
