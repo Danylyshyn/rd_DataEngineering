@@ -141,3 +141,8 @@ lesson_07/logs/
 /lesson_10/logs/
 /lesson_10/data/
 /lesson_10/data/sales_clean.csv
+/final_task/.env
+/final_task/docker-compose.yaml
+/final_task/Dockerfile
+/final_task/requirements.txt
+/final_task/logs/
