@@ -146,3 +146,16 @@ lesson_07/logs/
 /final_task/Dockerfile
 /final_task/requirements.txt
 /final_task/logs/
+!/final_task/docker-compose.yaml
+!/final_task/Dockerfile
+
+!/final_task/requirements.txt
+!/final_task/.env
+
+final_task/.env
+
+final_task/docker-compose.yaml
+
+final_task/Dockerfile
+
+final_task/requirements.txt
