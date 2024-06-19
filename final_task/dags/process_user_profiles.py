@@ -3,6 +3,8 @@ from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQue
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator, BigQueryCreateEmptyTableOperator
 from airflow.utils.dates import days_ago
 from airflow.operators.empty import EmptyOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+
 
 default_args = {
     'owner': 'airflow',
@@ -112,9 +114,14 @@ with DAG(
         },
     )
 
+    trigger_enrich_user_profiles = TriggerDagRunOperator(
+        task_id='trigger_enrich_user_profiles',
+        trigger_dag_id='enrich_user_profiles',
+        wait_for_completion=True,
+    )
 
     end = EmptyOperator(
         task_id='end',
     )
 
-    start >> create_silver_table >> load_and_transform_to_silver >> transform_full_name >> rich_customers >> end
+    start >> create_silver_table >> load_and_transform_to_silver >> transform_full_name >> rich_customers >> trigger_enrich_user_profiles >> end
